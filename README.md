@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## File Structure
 
 - `character.py`: Defines the `Character` class with attributes and methods for combat.
@@ -35,3 +36,42 @@ To run the simulation, execute `main.py`:
 
 ```bash
 python main.py
+=======
+## File Structure
+
+- `character.py`: Defines the `Character` class with attributes and methods for combat.
+- `main.py`: Runs the battle simulation using two instances of `Character`.
+
+## Character Class
+
+Located in `character.py`, the `Character` class includes:
+
+### Attributes
+- `name` (str): The character's name.
+- `hp` (int): Hit points (health).
+- `attack_power` (int): Damage dealt per attack.
+
+### Methods
+- `attack(other)`: Reduces the `other` character's HP by 30% to 90% of `attack_power` and prints an attack message.
+- `is_alive()`: Returns `True` if HP is greater than 0.
+- `__str__()`: Returns a string representation of the character's current HP.
+
+##  How the Battle Works
+
+The battle logic in `main.py` follows these steps:
+
+1. Create two characters: Knight and Goblin.
+2. Print their initial stats.
+3. Loop while both are alive:
+   - Knight attacks Goblin1 and Goblin2.
+   - If Goblin1 or Goblin2 survives, Goblin1 or Goblin2 attacks Knight.
+   - Print updated stats.
+4. Declare the winner when one character's HP reaches zero.
+
+##  Running the Game
+
+To run the simulation, execute `main.py`:
+
+```bash
+python main.py
+>>>>>>> 202487f (added radomized attack power in character.py)
