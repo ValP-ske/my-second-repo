@@ -1,8 +1,9 @@
+import random
 class Character:
-    def __init__(self, name, hp, attack_power):
+    def __init__(self, name, hp):
         self.name = name
         self.hp = hp
-        self.attack_power = attack_power
+        self.attack_power = random.randint(3, 9)
 
     def attack(self, other):
         other.hp -= self.attack_power
