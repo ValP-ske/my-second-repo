@@ -1,9 +1,9 @@
 from character import Character
 
 def main():
-    hero = Character("Knight", 30)
-    enemy1 = Character("Goblin1", 20)
-    enemy2 = Character("Goblin2", 20)
+    hero = Character("Knight", 30, 5)
+    enemy1 = Character("Goblin1", 20, 3)
+    enemy2 = Character("Goblin2", 20, 3)
 
     print(hero)
     print(enemy1)
